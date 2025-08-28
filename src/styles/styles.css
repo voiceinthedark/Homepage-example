@@ -53,6 +53,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
 
   .header-about {
     display: flex;
@@ -100,4 +102,58 @@ body {
     }
 
   }
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+
+    .project-list-container {
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        align-self: flex-start;
+      }
+
+      .project-list {
+        align-self: center;
+        width: inherit;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+
+        .project-item {
+          display: flex;
+          flex-direction: column;
+          max-width: 490px;
+          border: 1px solid black;
+
+          .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 4px 8px;
+
+            .project-links{
+              display: flex;
+              gap: 8px;
+            }
+          }
+
+          p{
+            margin: 8px 16px;
+          }
+        }
+
+      }
+    }
+
+
+  }
+
+
 }
