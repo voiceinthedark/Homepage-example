@@ -31,18 +31,18 @@
 }
 
 :root {
-  --bg-color-main: #e3d8f1;
-  --color-main: #000;
-  --color-grayish: #b0b0b0;
-  --color-cloudy: rgb(139, 173, 176);
-  --color-clear: rgb(255, 252, 54);
+  --bg-color-main: #a2aaa3;
+  --color-main: #fff;
+  --color-secondary: #000;
+  --color-grayish: #c0c0d0;
+  --bg-color-secondary: #12a2ff;
 }
 
 body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  color: var(--color-main);
+  color: var(--color-secondary);
   font-family: "lato", sans-serif;
   font-size: 1.5rem;
   display: flex;
@@ -55,6 +55,10 @@ body {
   gap: 20px;
   justify-content: center;
   align-items: flex-start;
+
+  header {
+    background-color: var(--bg-color-secondary);
+  }
 
   .header-about {
     display: flex;
@@ -97,6 +101,7 @@ body {
         align-self: flex-end;
         display: flex;
         gap: 24px;
+        font-size: 32px;
       }
 
     }
@@ -138,20 +143,69 @@ body {
             align-items: center;
             margin: 4px 8px;
 
-            .project-links{
+            .project-links {
               display: flex;
               gap: 8px;
             }
           }
 
-          p{
+          p {
             margin: 8px 16px;
+            font-size: 80%;
           }
         }
 
       }
     }
+  }
 
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5%;
+    background-color: var(--bg-color-secondary);
+    padding: 4% 0;
+    color: var(--color-main);
+
+    .footer-container {
+      width: inherit;
+      display: grid;
+      justify-items: center;
+      grid-template-columns: 1fr 1fr;
+
+      .footer-contact {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        font-size: 120%;
+
+        .footer-phone,
+        .footer-address,
+        .footer-email {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 24px;
+
+          &>a {
+            text-decoration: none;
+            color: var(--color-main);
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        .footer-icons {
+          display: flex;
+          gap: 24px;
+          font-size: 64px;
+        }
+      }
+    }
 
   }
 
