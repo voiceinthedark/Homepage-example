@@ -8,3 +8,4 @@ A home page example with a responsive layout
 
 - [fontawesome](https://fontawesome.com) - for the font icon of github and the spinner
 - Photo by Dillon Kydd: [pexels](https://www.pexels.com/photo/a-woman-in-a-printed-crew-neck-t-shirt-5794559/)
+- Photo by Dillon Kydd: [pexels](https://www.pexels.com/photo/fashion-woman-girl-model-7583296/)
