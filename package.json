@@ -1,6 +1,6 @@
 {
   "name": "homepage-example",
-  "version": "0.0.10",
+  "version": "0.0.20",
   "description": "Homepage with a responsive layout",
   "main": "index.js",
   "homepage": "https://github.com/voiceinthedark/Homepage-example",
