@@ -1,14 +1,13 @@
 {
-  "name": "weatherjs",
-  "version": "0.4.25",
-  "description": "a weather application",
+  "name": "homepage-example",
+  "version": "0.0.01",
+  "description": "Homepage with a responsive layout",
   "main": "index.js",
-  "homepage": "https://voiceinthedark.github.io/weatherjs/",
+  "homepage": "https://github.com/voiceinthedark/Homepage-example",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack serve --config webpack.dev.js",
-    "deploy": "git subtree push --prefix dist origin gh-pages",
-    "pages": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist",
     "test": "npx jest",
     "lint": "npx eslint .",
     "format": "npx prettier --write .",
@@ -19,21 +18,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "url+https://github.com/voiceinthedark/weatherjs.git"
+    "url": "git@github.com:voiceinthedark/Homepage-example.git"
   },
   "keywords": [
-    "weather",
-    "api",
-    "javascript",
-    "vanilla-javascript",
+    "responsive",
+    "layout",
     "css",
-    "webpack",
-    "geolocation"
+    "webpack"
   ],
   "author": "voiceinthedark",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/voiceinthedark/weatherjs/issues"
+    "url": "https://github.com/voiceinthedark/Homepage-example/issues"
   },
   "devDependencies": {
     "@eslint/js": "^9.31.0",
@@ -51,9 +47,5 @@
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.2",
     "webpack-merge": "^6.0.1"
-  },
-  "dependencies": {
-    "date-fns": "^4.1.0",
-    "uuid": "^11.1.0"
   }
 }
