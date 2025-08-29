@@ -71,7 +71,6 @@ body {
     width: 100%;
     height: 100%;
     background-color: var(--bg-color-secondary);
-    /* Apply background color here */
     z-index: -1;
     clip-path: polygon(
       50% 0%,
@@ -97,6 +96,7 @@ body {
 
     .header-photo {
       position: relative;
+      z-index: 12;
 
       img {
         object-fit: contain;
@@ -105,13 +105,13 @@ body {
       h1 {
         font-family: "Times New Romans", serif;
         font-weight: bold;
-        letter-spacing: 4Q;
+        letter-spacing: 1Q;
         position: absolute;
         bottom: 5%;
-        left: calc(10% - 12px);
+        left: calc(8% - 10px);
         color: white;
-        font-size: 180%;
-        text-shadow: 1px 2px 8px white;
+        font-size: 210%;
+        /* text-shadow: 1px 2px 8px white; */
       }
     }
 
@@ -126,6 +126,10 @@ body {
       margin-top: 3rem;
       padding-left: 12%;
       margin-left: -10%;
+      background-color: #fff;
+      opacity: 0.9;
+      z-index: 0;
+      box-shadow: 1px 3px 24px 4px black;
 
       .header-links {
         align-self: flex-end;
