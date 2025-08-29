@@ -18,10 +18,8 @@
 @font-face {
   font-family: "Montserrat";
   src:
-    url("../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
-      format("truetype"),
-    url("../assets/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf")
-      format("truetype");
+    url("../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf") format("truetype"),
+    url("../assets/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal, italic;
 }
@@ -72,18 +70,16 @@ body {
     height: 100%;
     background-color: var(--bg-color-secondary);
     z-index: -1;
-    clip-path: polygon(
-      50% 0%,
-      73% 0,
-      100% 0,
-      100% 70%,
-      71% 84%,
-      45% 93%,
-      19% 98%,
-      0 100%,
-      0% 35%,
-      0 0
-    );
+    clip-path: polygon(50% 0%,
+        73% 0,
+        100% 0,
+        100% 70%,
+        71% 84%,
+        45% 93%,
+        19% 98%,
+        0 100%,
+        0% 35%,
+        0 0);
   }
 
   .header-about {
@@ -143,7 +139,7 @@ body {
   .project-container {
     display: flex;
     flex-direction: column;
-    min-width: 100%;
+    min-width: 100vw;
     justify-content: center;
     align-items: center;
     align-self: flex-start;
@@ -220,7 +216,7 @@ body {
           justify-content: flex-start;
           gap: 24px;
 
-          & > a {
+          &>a {
             text-decoration: none;
             color: var(--color-main);
 
@@ -238,4 +234,52 @@ body {
       }
     }
   }
+}
+
+@media screen and (max-width: 580px) {
+
+  .header-about {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .header-description-container {
+    padding: 0;
+    margin: 0;
+    height: auto;
+    overflow: scroll;
+  }
+
+  .container {
+    .project-container {
+      .project-list-container {
+
+        /* max-width: 100vw; */
+        .project-list {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-self: auto;
+        }
+      }
+    }
+  }
+
+  .container {
+    .footer {
+      flex-direction: column;
+      .footer-container{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 5px;
+      }
+    }
+  }
+
+
+
+
+
+
 }
